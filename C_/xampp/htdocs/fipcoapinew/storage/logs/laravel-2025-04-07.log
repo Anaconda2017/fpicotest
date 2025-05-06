@@ -1,0 +1,22 @@
+[2025-04-07 12:38:34] local.ERROR: Illuminate\Http\Client\PendingRequest::withHeaders(): Argument #1 ($headers) must be of type array, null given, called in /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Http/Client/Factory.php on line 392 {"exception":"[object] (TypeError(code: 0): Illuminate\\Http\\Client\\PendingRequest::withHeaders(): Argument #1 ($headers) must be of type array, null given, called in /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Http/Client/Factory.php on line 392 at /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php:335)
+[stacktrace]
+#0 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Http/Client/Factory.php(392): Illuminate\\Http\\Client\\PendingRequest->withHeaders(NULL)
+#1 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Http\\Client\\Factory->__call('withHeaders', Array)
+#2 /home/fpico/fipcoapi/vendor/appstract/laravel-opcache/src/CreatesRequest.php(17): Illuminate\\Support\\Facades\\Facade::__callStatic('withHeaders', Array)
+#3 /home/fpico/fipcoapi/vendor/appstract/laravel-opcache/src/Commands/Status.php(33): Appstract\\Opcache\\Commands\\Status->sendRequest('status')
+#4 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Appstract\\Opcache\\Commands\\Status->handle()
+#5 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#8 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Container/Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#9 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call(Array)
+#10 /home/fpico/fipcoapi/vendor/symfony/console/Command/Command.php(298): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Console/Command.php(120): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 /home/fpico/fipcoapi/vendor/symfony/console/Application.php(1040): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /home/fpico/fipcoapi/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Appstract\\Opcache\\Commands\\Status), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /home/fpico/fipcoapi/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /home/fpico/fipcoapi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /home/fpico/fipcoapi/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
